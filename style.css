@@ -1,0 +1,41 @@
+:root{
+    --naranjaLocvi: #FF7959;
+    --negroLocvi: #3D3D3D;
+    --blancoLocvi: #F6F6F6;
+}
+@font-face {
+    font-family: 'Locvi Mod Space Grotesk';
+    src: url('./font/SpaceGrotesk-Variable-VF.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+.bg{
+    font-family: 'Locvi Mod Space Grotesk';
+background-color: var(--naranjaLocvi);
+width: 368px;
+height: 448px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.icon{  
+    color: var(--blancoLocvi);
+    text-align: center;
+    font-size: 9em;
+}
+@keyframes hoveranim1 {
+    0%   {font-variation-settings: "ANIM" 300}
+    50%  {font-variation-settings: "ANIM" 700}
+  100% {font-variation-settings: "ANIM" 300}
+  }
+  .icon{
+    
+    animation-name: hoveranim1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    font-weight: 300;
+    font-variation-settings: "wght" 300;
+    
+  }
